@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Zalando Sans", sans-serif;
+}
+section#home{
+    height: 100vh;
+    background: #403a94;
+    background: linear-gradient(90deg,#28245e 0%, #3e3477 50%, #3d3baa 100%);
+    padding-left: 50px;
+    padding-right: 500px;
+}
+
+section#home header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+section#home header div h1{
+    color: white;
+}
+
+section#home header nav ul{
+    color: white;
+    gap: 20px;
+    display: flex;
+    margin-top: 5px;
+}
+
+section#home header nav ul li{
+    color: white;
+    list-style: none;
+}
+section#home header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+button{
+    margin-top: 5px;   
+    border-radius: 5px;
+    height: 30px;
+    padding-top: 5px;
+    width: 100px;
+    padding-bottom: 5px;
+}
+
+section#home #content{
+    padding: 20px;
+    display: flex;
+}
+
+section#home #content h2{
+    font-size: 4rem;
+    color: white;
+}
+
+section#home #content p{
+    color: white;
+}
