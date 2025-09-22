@@ -7,26 +7,41 @@ body{
 }
 section#home{
     height: 100vh;
+    width:auto;
     background: #403a94;
     background: linear-gradient(90deg,#28245e 0%, #3e3477 50%, #3d3baa 100%);
-    padding-left: 50px;
-    padding-right: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
 }
 
 section#home header{
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    width: 100%;
 }
-section#home header div h1{
+section#home header div#img_name h1{
     color: white;
+    font-size: 1.3rem;
+}
+
+section#home header div#img_name{
+    display: flex;
+    justify-content: space-between;
+    gap: 15;
+}
+
+section#home header div#img_name img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
 section#home header nav ul{
     color: white;
-    gap: 20px;
+    gap: 30px;
     display: flex;
-    margin-top: 5px;
 }
 
 section#home header nav ul li{
@@ -36,28 +51,53 @@ section#home header nav ul li{
 section#home header nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    align-content:end;
+    transition: 0.25s;
 }
+section#home header nav ul li a:hover{
+    color: #ff74d5;
+    text-decoration: none;
+    font-size: 1rem;
+}   
 
-button{
-    margin-top: 5px;   
+button{  
     border-radius: 5px;
     height: 30px;
-    padding-top: 5px;
+    font-size: 1rem;
+    background: linear-gradient(90deg,#28245e 0%, #3d3baa 100%);
+    color:white;
+    border: none;
+    border-radius: 50px;
+    font-family: "Zalando Sans", sans-serif;
     width: 100px;
-    padding-bottom: 5px;
+    filter: drop-shadow(4px 4px 5px #7439ff);
+    transition: 0.25s;
+}
+button:hover{
+    background: linear-gradient(90deg,#5b54be 0%, #7775ec  100%);
+    color:#ff74d5;
 }
 
 section#home #content{
-    padding: 20px;
+    margin-top: 5vh;
     display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    gap: 30px;
 }
 
-section#home #content h2{
-    font-size: 4rem;
+section#home #content h2{   
+    font-size: 3rem;
     color: white;
 }
 
 section#home #content p{
     color: white;
+}       
+
+section#home #content div img{
+    border-radius: 50%;
+    border: 3px dashed white;
+    filter: drop-shadow(10px 10px 20px #7439ff);
 }
