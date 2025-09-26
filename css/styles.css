@@ -1,103 +1,505 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
+
 body{
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 320;
+    user-select: none;
 }
+
+section{
+    background: linear-gradient(90deg,#020202 0%, #141414 100%);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    margin: 0px;
+}
+
 section#home{
     height: 100vh;
     width:auto;
-    background: #403a94;
-    background: linear-gradient(90deg,#28245e 0%, #3e3477 50%, #3d3baa 100%);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
 }
 
 section#home header{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-section#home header div#img_name h1{
-    color: white;
-    font-size: 1.3rem;
 }
 
 section#home header div#img_name{
     display: flex;
-    justify-content: space-between;
-    gap: 15;
+    align-items: center;
+}
+
+section#home header div#img_name h1{
+    color: #f1f1f1;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 section#home header div#img_name img{
-    height: 30px;
-    width: 30px;
+    height: 1.6rem;
+    width: 1.6rem;
     border-radius: 50%;
     margin-right: 15px;
 }
 
 section#home header nav ul{
-    color: white;
-    gap: 30px;
+    height: 100%;
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 section#home header nav ul li{
-    color: white;
     list-style: none;
-}
-section#home header nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    align-content:end;
     transition: 0.25s;
 }
-section#home header nav ul li a:hover{
-    color: #ff74d5;
+
+section#home header nav ul li:hover{
+    transform: scale(1.1);
+}
+
+section#home header nav ul li a{
+    color: #f1f1f1;
     text-decoration: none;
     font-size: 1rem;
+    transition: 0.12s;
+}
+
+section#home header nav ul li a:hover{
+    color: #46ff93;
+    font-weight: 400;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
 }   
 
-button{  
-    border-radius: 5px;
-    height: 30px;
+button{
+    color:#f1f1f1;
     font-size: 1rem;
-    background: linear-gradient(90deg,#28245e 0%, #3d3baa 100%);
-    color:white;
-    border: none;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 120px;
+    border-radius: 5px;
+    background: #f1f1f10e;
+    border: 1px solid #f1f1f1;
     border-radius: 50px;
-    font-family: "Zalando Sans", sans-serif;
-    width: 100px;
-    filter: drop-shadow(4px 4px 5px #7439ff);
+    filter: drop-shadow(0px 0px 0.2rem #020202);
     transition: 0.25s;
 }
+
 button:hover{
-    background: linear-gradient(90deg,#5b54be 0%, #7775ec  100%);
-    color:#ff74d5;
+    color:#020202;
+    font-weight: 550;
+    background: linear-gradient(90deg,#f1f1f1 0%, #c0c0c0  100%);
+    filter: drop-shadow(0px 0px 0.2rem #f1f1f1);
+    transform: scale(1.1);
 }
 
 section#home #content{
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
-    row-gap: 30px;
     gap: 30px;
 }
 
-section#home #content h2{   
-    font-size: 3rem;
-    color: white;
+section#home #content #ba1 {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 
-section#home #content p{
-    color: white;
+section#home #content #ba1 h2{  
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+section#home #content #ba1 h3{   
+    color: #46ff93;
+    font-size: 3rem;
+    font-weight: 400;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+section#home #content #ba1 p{
+    color: #f1f1f1;
+    font-size: 1.5rem;
 }       
 
+section#home #content #ba1 div {
+    display: flex;
+    gap: 30px;
+}  
+
+section#home #content #ba1 div button{
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 20%;
+}       
+        
 section#home #content div img{
+    height: 40rem;
+    border: 5px double #f1f1f1;
+    border-radius: 50%; 
+    filter: drop-shadow(0px 0px 0.5rem #f1f1f1);
+}
+
+section#home div#band{
+    height: 4rem;
+    background: linear-gradient(90deg,#46ff93 0%, #35e1ff 100%);
+    margin-top: 5rem;
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+section#bout{
+    height: 100vh;
+    width: auto;
+}
+
+section#bout #content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+section#bout #content div img{
     border-radius: 50%;
-    border: 3px dashed white;
-    filter: drop-shadow(10px 10px 20px #7439ff);
+    border: 5px double #f1f1f1;
+    filter: drop-shadow(0px 0px 0.5rem #f1f1f1);
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+}
+
+section#bout #content #a0{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#bout #content #a0 #a1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+section#bout #content #a0 #a1 h2{
+    color: #f1f1f1;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+section#bout #content #a0 #a1 h3{
+    color: #46ff93;
+    font-size: 3rem;
+    font-weight: 400;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+section#bout #content #a0 #a1 p{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+
+section#bout #content #a0 #stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+section#bout #content #a0 #stats div{
+    background: #f1f1f10e;
+    backdrop-filter: blur(10px);   
+    height: 4rem;
+    border: 1px solid #f1f1f1;
+    border-radius: 7.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.25s;
+}
+
+section#bout #content #a0 #stats div:hover{
+    transform: scale(1.06);
+    z-index: 1;
+}
+
+section#bout #content #a0 #stats div h4{
+    color:#f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 680;    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+section#bout #content #a0 #stats div:hover h4{
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+section#bout #content #a0 #stats div h5{
+    color:#f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 400;    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+section#bout #content #a0 button{
+    font-size: 1.5rem;
+    width: 30%;
+    height: 3rem;
+}
+
+section#serv{
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(to right, #020202, #101010);
+}
+
+section#serv #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section#serv #content h2 {
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+section#serv #content p{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section#serv #content #s1{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 60px;
+    height: 60%;
+}
+
+section#serv #content #s1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background: #f1f1f10e;
+    padding: 15px;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    transition: 0.25s ;
+}
+
+section#serv #content #s1 div:hover{
+    transform: scale(1.1);
+}
+
+section#serv #content #s1 div:hover h3{
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+section#serv #content #s1 div img{
+    border-radius: 15px;
+    height: 15rem;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(80%);
+}
+
+section#serv #content #s1 div h3{
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 450;   
+}
+
+section#serv #content #s1 div p{
+    text-align: left;
+    font-size: 1rem;
+}
+
+section#toask{
+    height: 100vh;
+    width: auto;
+}
+
+section#toask #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    gap: 15px;
+}
+
+section#toask #content h2{
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+section#toask #content #tar{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 60%;
+    background: #f1f1f10e;
+    padding: 15px;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    transition: 0.25s ;
+}
+
+section#toask #content #tar:hover{
+    transform: scale(1.1);
+    rotate: 0.6deg;
+}
+
+section#toask #content #tar:hover h3{
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+section#toask #content #tar #img_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+
+section#toask #content #tar #img_name img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section#toask #content #tar #img_name div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7.5px;
+    
+}
+
+section#toask #content #tar #img_name div h3{
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section#toask #content #tar #img_name div h4{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    font-weight: 320;
+}
+
+section#toask #content #tar #pro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+section#toask #content #tar #pro #progress{
+    background: #f1f1f10e;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding-left: 1rem;
+    display: flex;
+    height: 5rem;
+    width: 35rem;
+}
+
+section#toask #content #tar #pro #progress #value{
+  box-shadow: 0 10px 40px -10px #f1f1f1;
+  border-radius: 100px;
+  background: #f1f1f1;
+  height: 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 15px;
+}
+
+section#toask #content #tar #pro #progress #value h5{
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+section#toask #content #tar #pro button{
+    border: none;
+    background: none;
+    transition: 0.3s;
+    width: auto;
+    height: auto;
+    text-align: right;
+}
+
+section#toask #content #tar #pro button:hover{
+    transform: scale(1.2);
+    filter: none;
+    color: #46ff93;
+}
+
+section#port{
+    height: 150vh;
+    width: auto;
+}
+
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
 }
