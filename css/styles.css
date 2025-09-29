@@ -1,75 +1,76 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-weight: 320;
     user-select: none;
 }
 
-section{
-    background: linear-gradient(90deg,#020202 0%, #141414 100%);
+section {
+    background: linear-gradient(90deg, #020202 0%, #141414 100%);
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 15px;
     margin: 0px;
+
 }
 
-section#home{
+section#home {
     height: 100vh;
-    width:auto;
+    width: auto;
 }
 
-section#home header{
+section#home header {
     display: flex;
     justify-content: space-between;
 }
 
-section#home header div#img_name{
+section#home header div#img_name {
     display: flex;
     align-items: center;
 }
 
-section#home header div#img_name h1{
+section#home header div#img_name h1 {
     color: #f1f1f1;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-section#home header div#img_name img{
+section#home header div#img_name img {
     height: 1.6rem;
     width: 1.6rem;
     border-radius: 50%;
     margin-right: 15px;
 }
 
-section#home header nav ul{
+section#home header nav ul {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-section#home header nav ul li{
+section#home header nav ul li {
     list-style: none;
     transition: 0.25s;
 }
 
-section#home header nav ul li:hover{
+section#home header nav ul li:hover {
     transform: scale(1.1);
 }
 
-section#home header nav ul li a{
+section#home header nav ul li a {
     color: #f1f1f1;
     text-decoration: none;
     font-size: 1rem;
     transition: 0.12s;
 }
 
-section#home header nav ul li a:hover{
+section#home header nav ul li a:hover {
     color: #46ff93;
     font-weight: 400;
     background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
@@ -78,10 +79,10 @@ section#home header nav ul li a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 0.5s linear infinite;
-}   
+}
 
-button{
-    color:#f1f1f1;
+button {
+    color: #f1f1f1;
     font-size: 1rem;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
@@ -92,38 +93,40 @@ button{
     border: 1px solid #f1f1f1;
     border-radius: 50px;
     filter: drop-shadow(0px 0px 0.2rem #020202);
+    cursor: pointer;
     transition: 0.25s;
 }
 
-button:hover{
-    color:#020202;
+button:hover {
+    color: #020202;
     font-weight: 550;
-    background: linear-gradient(90deg,#f1f1f1 0%, #c0c0c0  100%);
+    background: linear-gradient(90deg, #f1f1f1 0%, #c0c0c0 100%);
     filter: drop-shadow(0px 0px 0.2rem #f1f1f1);
     transform: scale(1.1);
 }
 
-section#home #content{
+section#home #content {
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-section#home #content #ba1 {   
+section#home #content #ba1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
 
-section#home #content #ba1 h2{  
+section#home #content #ba1 h2 {
     color: #f1f1f1;
     font-size: 5rem;
     font-weight: 500;
+    font-family: "Aldrich", sans-serif;
 }
 
-section#home #content #ba1 h3{   
+section#home #content #ba1 h3 {
     color: #46ff93;
     font-size: 3rem;
     font-weight: 400;
@@ -135,43 +138,43 @@ section#home #content #ba1 h3{
     animation: animate-gradient 2.5s linear infinite;
 }
 
-section#home #content #ba1 p{
+section#home #content #ba1 p {
     color: #f1f1f1;
     font-size: 1.5rem;
-}       
+}
 
 section#home #content #ba1 div {
     display: flex;
     gap: 30px;
-}  
+}
 
-section#home #content #ba1 div button{
+section#home #content #ba1 div button {
     font-size: 1.5rem;
     height: 3rem;
     width: 20%;
-}       
-        
-section#home #content div img{
+}
+
+section#home #content div img {
     height: 40rem;
     border: 5px double #f1f1f1;
-    border-radius: 50%; 
+    border-radius: 50%;
     filter: drop-shadow(0px 0px 0.5rem #f1f1f1);
 }
 
-section#home div#band{
+section#home div#band {
     height: 4rem;
-    background: linear-gradient(90deg,#46ff93 0%, #35e1ff 100%);
+    background: linear-gradient(90deg, #46ff93 0%, #35e1ff 100%);
     margin-top: 5rem;
     margin-left: -60px;
     margin-right: -60px;
 }
 
-section#bout{
+section#bout {
     height: 100vh;
     width: auto;
 }
 
-section#bout #content{
+section#bout #content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,7 +182,7 @@ section#bout #content{
     height: 100%;
 }
 
-section#bout #content div img{
+section#bout #content div img {
     border-radius: 50%;
     border: 5px double #f1f1f1;
     filter: drop-shadow(0px 0px 0.5rem #f1f1f1);
@@ -188,7 +191,7 @@ section#bout #content div img{
     object-fit: cover;
 }
 
-section#bout #content #a0{
+section#bout #content #a0 {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -196,20 +199,21 @@ section#bout #content #a0{
     gap: 30px;
 }
 
-section#bout #content #a0 #a1{
+section#bout #content #a0 #a1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
 }
 
-section#bout #content #a0 #a1 h2{
+section#bout #content #a0 #a1 h2 {
     color: #f1f1f1;
     font-size: 4rem;
     font-weight: 500;
+    font-family: "Aldrich", sans-serif;
 }
 
-section#bout #content #a0 #a1 h3{
+section#bout #content #a0 #a1 h3 {
     color: #46ff93;
     font-size: 3rem;
     font-weight: 400;
@@ -221,20 +225,20 @@ section#bout #content #a0 #a1 h3{
     animation: animate-gradient 2.5s linear infinite;
 }
 
-section#bout #content #a0 #a1 p{
+section#bout #content #a0 #a1 p {
     color: #f1f1f1;
     font-size: 1.5rem;
 }
 
-section#bout #content #a0 #stats{
+section#bout #content #a0 #stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-section#bout #content #a0 #stats div{
+section#bout #content #a0 #stats div {
     background: #f1f1f10e;
-    backdrop-filter: blur(10px);   
+    backdrop-filter: blur(10px);
     height: 4rem;
     border: 1px solid #f1f1f1;
     border-radius: 7.5px;
@@ -244,20 +248,20 @@ section#bout #content #a0 #stats div{
     transition: 0.25s;
 }
 
-section#bout #content #a0 #stats div:hover{
+section#bout #content #a0 #stats div:hover {
     transform: scale(1.06);
     z-index: 1;
 }
 
-section#bout #content #a0 #stats div h4{
-    color:#f1f1f1;
+section#bout #content #a0 #stats div h4 {
+    color: #f1f1f1;
     font-size: 1.5rem;
-    font-weight: 680;    
+    font-weight: 680;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-section#bout #content #a0 #stats div:hover h4{
+section#bout #content #a0 #stats div:hover h4 {
     background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
     background-size: 200%;
     background-clip: text;
@@ -266,27 +270,27 @@ section#bout #content #a0 #stats div:hover h4{
     animation: animate-gradient 0.5s linear infinite;
 }
 
-section#bout #content #a0 #stats div h5{
-    color:#f1f1f1;
+section#bout #content #a0 #stats div h5 {
+    color: #f1f1f1;
     font-size: 1.5rem;
-    font-weight: 400;    
+    font-weight: 400;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-section#bout #content #a0 button{
+section#bout #content #a0 button {
     font-size: 1.5rem;
     width: 30%;
     height: 3rem;
 }
 
-section#serv{
+section#serv {
     height: 100vh;
     width: auto;
     background: linear-gradient(to right, #020202, #101010);
 }
 
-section#serv #content{
+section#serv #content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,15 +302,16 @@ section#serv #content h2 {
     color: #f1f1f1;
     font-size: 3rem;
     font-weight: 400;
+    font-family: "Aldrich", sans-serif;
 }
 
-section#serv #content p{
+section#serv #content p {
     color: #f1f1f1;
     font-size: 1.2rem;
     text-align: center;
 }
 
-section#serv #content #s1{
+section#serv #content #s1 {
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -316,7 +321,7 @@ section#serv #content #s1{
     height: 60%;
 }
 
-section#serv #content #s1 div{
+section#serv #content #s1 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,14 +330,14 @@ section#serv #content #s1 div{
     padding: 15px;
     border: 1px solid #f1f1f1;
     border-radius: 15px;
-    transition: 0.25s ;
+    transition: 0.25s;
 }
 
-section#serv #content #s1 div:hover{
+section#serv #content #s1 div:hover {
     transform: scale(1.1);
 }
 
-section#serv #content #s1 div:hover h3{
+section#serv #content #s1 div:hover h3 {
     background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
     background-size: 200%;
     background-clip: text;
@@ -341,7 +346,7 @@ section#serv #content #s1 div:hover h3{
     animation: animate-gradient 0.5s linear infinite;
 }
 
-section#serv #content #s1 div img{
+section#serv #content #s1 div img {
     border-radius: 15px;
     height: 15rem;
     object-fit: cover;
@@ -349,23 +354,23 @@ section#serv #content #s1 div img{
     filter: brightness(80%);
 }
 
-section#serv #content #s1 div h3{
+section#serv #content #s1 div h3 {
     color: #f1f1f1;
     font-size: 2rem;
-    font-weight: 450;   
+    font-weight: 450;
 }
 
-section#serv #content #s1 div p{
+section#serv #content #s1 div p {
     text-align: left;
     font-size: 1rem;
 }
 
-section#toask{
+section#toask {
     height: 100vh;
     width: auto;
 }
 
-section#toask #content{
+section#toask #content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,14 +380,15 @@ section#toask #content{
     gap: 15px;
 }
 
-section#toask #content h2{
+section#toask #content h2 {
     color: #f1f1f1;
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: "Aldrich", sans-serif;
 }
 
-section#toask #content #tar{
+section#toask #content #tar {
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -391,15 +397,15 @@ section#toask #content #tar{
     padding: 15px;
     border: 1px solid #f1f1f1;
     border-radius: 15px;
-    transition: 0.25s ;
+    transition: 0.25s;
 }
 
-section#toask #content #tar:hover{
+section#toask #content #tar:hover {
     transform: scale(1.1);
     rotate: 0.6deg;
 }
 
-section#toask #content #tar:hover h3{
+section#toask #content #tar:hover h3 {
     background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
     background-size: 200%;
     background-clip: text;
@@ -415,41 +421,41 @@ section#toask #content #tar #img_name {
     gap: 30px
 }
 
-section#toask #content #tar #img_name img{
+section#toask #content #tar #img_name img {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-section#toask #content #tar #img_name div{
+section#toask #content #tar #img_name div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 7.5px;
-    
+
 }
 
-section#toask #content #tar #img_name div h3{
+section#toask #content #tar #img_name div h3 {
     color: #f1f1f1;
     font-size: 2rem;
     font-weight: 400;
 }
 
-section#toask #content #tar #img_name div h4{
+section#toask #content #tar #img_name div h4 {
     color: #f1f1f1;
     font-size: 1.2rem;
     font-weight: 320;
 }
 
-section#toask #content #tar #pro{
+section#toask #content #tar #pro {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
 
-section#toask #content #tar #pro #progress{
+section#toask #content #tar #pro #progress {
     background: #f1f1f10e;
     justify-content: flex-start;
     border-radius: 100px;
@@ -461,24 +467,24 @@ section#toask #content #tar #pro #progress{
     width: 35rem;
 }
 
-section#toask #content #tar #pro #progress #value{
-  box-shadow: 0 10px 40px -10px #f1f1f1;
-  border-radius: 100px;
-  background: #f1f1f1;
-  height: 4rem;
-  width: 80%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding-right: 15px;
+section#toask #content #tar #pro #progress #value {
+    box-shadow: 0 10px 40px -10px #f1f1f1;
+    border-radius: 100px;
+    background: #f1f1f1;
+    height: 4rem;
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 15px;
 }
 
-section#toask #content #tar #pro #progress #value h5{
+section#toask #content #tar #pro #progress #value h5 {
     font-size: 1.5rem;
     font-weight: 350;
 }
 
-section#toask #content #tar #pro button{
+section#toask #content #tar #pro button {
     border: none;
     background: none;
     transition: 0.3s;
@@ -487,19 +493,823 @@ section#toask #content #tar #pro button{
     text-align: right;
 }
 
-section#toask #content #tar #pro button:hover{
+section#toask #content #tar #pro button:hover {
     transform: scale(1.2);
     filter: none;
     color: #46ff93;
 }
 
-section#port{
+section#port {
     height: 150vh;
     width: auto;
 }
 
-@keyframes animate-gradient{
-    to{
+section#port #content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+section#port #content #ni {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#port #content #ni h3 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section#port #content #ni h2 {
+    color: #f1f1f1;
+    font-size: 3.5rem;
+    font-weight: 450;
+    font-family: "Aldrich", sans-serif;
+}
+
+section#port #content #ni #but {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+section#port #content #ni #but button {
+    width: auto;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section#port #content #ni #but #selec {
+    background-color: #f1f1f1;
+    color: #020202;
+}
+
+section#port #content #cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    row-gap: 30px;
+    height: 75%;
+    width: 100%;
+}
+
+section#port #content #cards #con {
+    height: auto;
+    transition: 0.25s;
+}
+
+section#port #content #cards #con:hover {
+    transform: scale(1.02);
+}
+
+section#port #content #cards #con #imgcon {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section#port #content #cards #con #imgcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%) blur(2px);
+    transform: scale(1.2);
+    transition: 0.25s;
+}
+
+section#port #content #cards #con #txt_shi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+section#port #content #cards #con #txt_shi h4 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+section#port #content #cards #con:hover #txt_shi h4 {
+    font-weight: 500;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+section#port #content #cards #con:hover #imgcon img {
+    filter: none;
+    transform: scale(1);
+}
+
+section#port #content #cards #con #txt_shi button {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section#port #content #last {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section#port #content #last #see {
+    width: auto;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+section#tes {
+    height: 85vh;
+    width: auto;
+}
+
+section#tes #content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+section#tes #content #fir {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+section#tes #content h2 {
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Aldrich", sans-serif;
+}
+
+section#tes #content p {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section#tes #content #tesca {
+    background: #f1f1f10e;
+    border-radius: 15px;
+    width: 60%;
+    height: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #f1f1f1;
+    transition: 0.25s;
+}
+
+section#tes #content #tesca img {
+    height: 100%;
+    width: 40%;
+    border-radius: 15px
+}
+
+section#tes #content #tesca #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 15px;
+}
+
+section#tes #content #tesca #info p {
+    color: #f1f1f1;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+section#tes #content #tesca #info h3 {
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+
+section#tes #content #tesca #info h4 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 320;
+}
+
+section#tes #content #tesca:hover {
+    transform: scale(1.05);
+    rotate: 0.2deg;
+}
+
+section#tes #content #tesca:hover h3 {
+    font-weight: 500;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+section#tes #content #nado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section#tes #content #nado img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+section#tes #content #nado img:hover {
+    transform: translateY(-0.5rem);
+    filter: drop-shadow(0px 0px 0.2rem #f1f1f1);
+}
+
+section#tes #content #nado #iteact {
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+}
+
+section#price {
+    height: 80vh;
+    width: auto;
+    padding-bottom: 120px;
+}
+
+section#price #content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+section#price #content #fir {
+    display: flex;  
+    flex-direction: column; 
+    gap: 15px;  
+    justify-content: center;    
+    align-items: center;    
+    height: 20%;    
+}   
+
+section#price #content h2 { 
+    color: #f1f1f1; 
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Aldrich", sans-serif;
+}
+
+section#price #content p {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section#price #content #pla {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+    row-gap: 30px;
+    height: 65%;
+    width: 80%;
+}
+
+section#price #content #pla #onp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #f1f1f10e;
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+    transition: 0.25s;
+}
+
+section#price #content #pla #onp #cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+section#price #content #pla #onp:hover{
+    transform: scale(1.05);
+}
+
+section#price #content #pla #onp #cont h3{
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+section#price #content #pla #onp:hover #cont h3{
+    font-weight: 600;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2s linear infinite;
+}
+
+section#price #content #pla #onp #cont #com{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+section#price #content #pla #onp #cont #com #prishi{
+    display: flex;
+    align-items: end;
+}
+
+section#price #content #pla #onp #cont #com #prishi p{
+    padding-bottom: 7.5px;
+    padding-left: 7.5px;
+}
+
+section#price #content #pla #onp #cont #lis{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 15px;
+}
+
+section#price #content #pla #onp #cont #lis h4{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+section#price #content #pla #onp #cont #lis p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+section#price #content #pla #onp #cont button{
+    height: 3rem;
+    width: 40%;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section#contact{
+    height: 80vh;
+    width: auto;
+    background: #10101096;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#contact iframe{
+    position: absolute;
+    margin-top: -15px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+section#contact #content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+section#contact #content #info{
+    background: #101010;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+    filter: drop-shadow(0px 0px 10px #101010);
+    margin-top: 60px;
+}
+
+section#contact #content #info div{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+section#contact #content #info div h3{
+    color: #f1f1f1; 
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section#contact #content #info div p{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+}
+
+section#contact #content #info div #ti{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+
+section#contact #content #info div #ti span{
+    display: inline-block;
+    width: 2rem;
+}
+
+section#contact #content #git{
+    background: #101010;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+    filter: drop-shadow(0px 0px 10px #101010);
+    margin-top: 60px;
+    transition: 0.25s;
+}
+section#contact #content #git:hover{
+    transform: scale(1.1);
+}
+
+section#contact #content #git:hover #insi h2{
+    font-weight: 600;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2s linear infinite;
+}
+
+section#contact #content #git #insi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+section#contact #content #git #insi h2{
+    color: #f1f1f1; 
+    font-size: 3rem;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+section#contact #content #git #insi input[type="text"]{
+    color: #f1f1f1;
+    width: 60%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    background: transparent;
+    border: 1px solid #f1f1f1;
+    border-width: 0px 0px 2px 0px;
+}
+
+section#contact #content #git #insi textarea{
+    color: #f1f1f1;
+    width: 60%;
+    height: 30%;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #f1f1f1;
+    background: transparent;
+}
+
+section#contact #content #git #insi input[type="text"]:focus{
+    border-bottom: 1px solid #f1f1f1;
+    stroke: none;
+}
+
+section#contact #content #git #insi button{
+    height: 3rem;
+    width: 40%;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section#news{
+    height: 100vh;
+    width: auto;
+}
+
+section#news #content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section#news #content h2{
+    color: #f1f1f1;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Aldrich", sans-serif;
+}
+
+section#news #content #tar{
+    width: 100%;
+    height: 20%;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f10e;
+    transition: 0.25s;
+}
+
+section#news #content #tar #date{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#news #content #tar:hover{
+    transform: scale(1.02);
+}
+
+section#news #content #tar #date h2{
+    color: #f1f1f1;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+section#news #content #tar #date h4{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+section#news #content #tar #remore{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#news #content #tar #remore h3 a{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section#news #content #tar #title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 30px ;
+    gap: 15px;
+}
+
+section#news #content #tar #title h3{
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+section#news #content #tar:hover #title h3{
+    font-weight: 500;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2s linear infinite;
+}
+
+section#news #content #tar #title p{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+}
+
+footer{
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-right: 60px;
+    height: 40vh;
+    width: auto;
+    background: linear-gradient(to top, #020202,#101010);
+}
+
+footer #content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer #content #impo{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer #content #impo #about{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 15px;
+}
+
+footer #content #impo #about #prof{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+footer #content #impo #about #prof img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+footer #content #impo #about #prof h3{
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+footer #content #impo #about #nig{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer #content #impo #about p{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    font-weight: 320;
+}
+
+footer #content #impo #links{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 30px;
+}
+
+footer #content #impo #links h4{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer #content #impo #links ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 15px;
+}
+
+footer #content #impo #links ul li{
+    list-style: none;
+    transition: 0.25s;
+}
+
+footer #content #impo #links ul li a{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.12s;
+}
+
+footer #content #impo #links ul li:hover {
+    transform: scale(1.1);
+}
+
+footer #content #impo #links ul li a:hover {
+    color: #46ff93;
+    font-weight: 400;
+    background: linear-gradient(to right, #46ff93, #35e1ff, #46ff93);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 0.5s linear infinite;
+}
+
+
+footer #content #bottom{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer #content #bottom h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px #46ff93;
+}
+
+
+
+@keyframes animate-gradient {
+    to {
         background-position: 200%;
     }
 }
