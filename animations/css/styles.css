@@ -27,11 +27,13 @@ section#main #content #dk{
     top: 22%;
     left: 12%;
     object-fit: cover;
+    animation: salto 10s infinite;
 }
 section#main #content #dk img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 section#main #content #barr{
@@ -60,4 +62,58 @@ section#main #content #barr2 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.girobarril{
+    animation: rotarBarril 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes  rotarBarril{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes salto{
+    0%{
+        top: -400px;
+        left: -100px;
+        transform: scale(1);
+    }
+    16%{
+        top: 22%;
+        left: 12%;
+    }
+    26%{
+        left: 45%;
+        top: 12%;
+    }
+    32%{
+        left: 50%;
+        top: 10%;
+    }
+    48%{
+        left: 60%;
+        top: 40%;
+    }
+    64%{
+        left: 25%;
+        top:25%;
+        transform: scale(1);
+    }
+    82%{
+        top: 65%;
+        left: 12%;
+        transform: scale(0.5);
+    }
+    100%{
+        top: -400px;
+        left: -100px;
+        transform: scale(1);
+    }
+
 }
