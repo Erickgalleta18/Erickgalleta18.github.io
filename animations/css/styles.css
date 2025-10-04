@@ -27,7 +27,7 @@ section#main #content #dk{
     top: 22%;
     left: 12%;
     object-fit: cover;
-    animation: salto 10s infinite;
+    animation: salto 8s ease infinite;
 }
 section#main #content #dk img{
     width: 100%;
@@ -83,37 +83,91 @@ section#main #content #barr2 img{
         top: -400px;
         left: -100px;
         transform: scale(1);
+        transform: scaleX(-1);
+        rotate: 0deg;
     }
-    16%{
+    5%{ 
         top: 22%;
         left: 12%;
+        transform: scale(1);
+        transform: scaleX(-1);
     }
-    26%{
-        left: 45%;
+    15%{
+        /*PRIMERA BASE xd*/
+        top: 22%;
+        left: 12%;
+        transform: scale(1);
+        transform: scaleX(-1);
+    }
+    20%{
+        /*Salto 1 f1*/
         top: 12%;
+        left: 35%;
+        transform: scale(1);
+        transform: scaleX(-1);
     }
-    32%{
-        left: 50%;
+    22%{
+        /*Salto 1 f2*/
         top: 10%;
+        left: 45%;
+        transform: scale(1);
+        transform: scaleX(-1);
     }
-    48%{
-        left: 60%;
+    24%{
+        /*Salto 1 f3*/
         top: 40%;
+        left: 60%;
+        transform: scale(1);
+        transform: scaleX(-1);
     }
-    64%{
-        left: 25%;
+    25%{
+        transform: scale(1);
+        transform: scaleX(1);
+    }
+    40%{
+        /*MANTENIENDOOOO*/
+        top: 40%;
+        left: 60%;
+        transform: scaleX(1);
+    }
+    44%{
+        /*Salto 2 f1*/
         top:25%;
+        left: 40%;
         transform: scale(1);
     }
-    82%{
+    46%{
+        /*Salto 2 f2*/
+        top: 20%;
+        left: 25%;
+        transform: scale(1);
+    }
+    48%{
+        /*Salto 2 f3*/
         top: 65%;
         left: 12%;
         transform: scale(0.5);
     }
-    100%{
+    70%{
+        /*MANTENIENDOOOO*/
+        top: 65%;
+        left: 12%;
+        transform: scale(0.5);
+        rotate: 0deg;
+    }
+    75%{
+        /*ADIOS*/
         top: -400px;
         left: -100px;
         transform: scale(1);
+        rotate: 358deg;
+    }
+    100%{
+        /*MANTENIENDOOOO*/
+        top: -400px;
+        left: -100px;
+        transform: scale(1);
+        rotate: 365deg;
     }
 
 }
