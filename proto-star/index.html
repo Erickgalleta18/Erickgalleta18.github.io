@@ -39,7 +39,55 @@
     <div class="overlay">
       <h2>DISCOVER THE</h2>
       <h1>COSMOS</h1>
-      <a href="#" class="cta-btn">LET’S GO</a>
+      <button class="cta-btn"><a href="./menu.html">LET'S GO</a></button>
+    </div>
+  </section>
+
+  <section class="week">
+    <h3><i class="fa-solid fa-rocket"></i> POPULAR THIS WEEK</h3>
+    <p class="subtitle">Discover the most fascinating cosmic objects capturing everyone's attention this week.</p>
+
+    <div class="week-grid">
+      <article class="week-card">
+        <img src="./img/andromeda.webp" alt="Andromeda Galaxy">
+        <div class="week-info">
+          <h4>Andromeda Galaxy</h4>
+          <p>The closest spiral galaxy to the Milky Way — a breathtaking view 2.5 million light-years away.</p>
+        </div>
+      </article>
+
+      <article class="week-card">
+        <img src="./img/pilars.jpg" alt="Pillars of Creation">
+        <div class="week-info">
+          <h4>Pillars of Creation</h4>
+          <p>One of the most iconic images captured by Hubble — colossal towers of interstellar gas and dust.</p>
+        </div>
+      </article>
+
+      <article class="week-card">
+        <img src="./img/jupiter.jpeg" alt="Jupiter">
+        <div class="week-info">
+          <h4>Jupiter</h4>
+          <p>The giant of our Solar System — its swirling storms and Great Red Spot mesmerize stargazers.</p>
+        </div>
+      </article>
+
+      <article class="week-card">
+        <img src="./img/orion.jpg" alt="Orion Nebula">
+        <div class="week-info">
+          <h4>Orion Nebula</h4>
+          <p>A stellar nursery where new stars are born, glowing with vivid clouds of hydrogen and dust.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="browse">
+    <h3>BROWSE IN THE COSMOS <i class="fa-solid fa-magnifying-glass"></i></h3>
+    <p class="subtitle">Search for stars, planets, galaxies, and more.</p>
+    <div class="search-container">
+      <input type="text" placeholder="Search for celestial objects..." id="cosmos-search">
+      <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     </div>
   </section>
 
@@ -54,19 +102,19 @@
       </p>
       <div class="features">
         <div class="feature">
-          <i class="fa-solid fa-book"></i>
+          <p id="icon"><i class="fa-solid fa-book"></i></p>
           <p>EASY</p>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-bolt-lightning"></i>
+          <p id="icon"><i class="fa-solid fa-bolt-lightning"></i></p>
           <p>FAST</p>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-square-check"></i>
+          <p id="icon"><i class="fa-solid fa-square-check"></i></p>
           <p>RELIABLE</p>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-graduation-cap"></i>
+          <p id="icon"><i class="fa-solid fa-graduation-cap"></i></p>
           <p>CLEAR</p>
         </div>
       </div>
@@ -78,24 +126,71 @@
 
     <article class="review-card">
       <div class="review-header">
-        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Reviewer photo">
         <div>
-          <strong>Dr. Richard B. Dunn</strong> &nbsp; <span>5 / 5 ⭐</span>
+          <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="Reviewer photo">
+          <p>Dr. Richard B. Dunn</p>
+          <p>5 / 5 <i class="fa-solid fa-star"></i></p>
         </div>
-        <small>3 hours ago.</small>
+        <h5>3 hours ago.</h5>
       </div>
       <p>
         As an astronomer, I am constantly searching for resources that balance scientific accuracy with accessibility.
         Proto-Star achieves this beautifully. The information is not only factually correct but also presented in a
-        way that sparks curiosity and makes complex concepts easy to grasp. It’s a reliable and engaging platform
+        way that sparks curiosity and makes complex concepts easy to grasp. It's a reliable and engaging platform
         for anyone interested in exploring the universe.
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-header">
+        <div>
+          <img src="https://randomuser.me/api/portraits/women/53.jpg" alt="Reviewer photo">
+          <p>Dr. Antonella Nota</p>
+          <p>5 / 5 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <h5>9 hours ago.</h5>
+      </div>
+      <p>
+        This inspires the next generation of explorers through creativity and science. As someone who has spent
+        years studying how stars are born, I'm truly impressed by how Proto Star helps users understand these processes
+        in such an engaging and visual way. The interactive modules mirror the excitement of real astronomical discovery
+        — you can almost feel the moment a new star lights up. It's a platform that beautifully combines education,
+        technology, and imagination.
+      </p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-header">
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Reviewer photo">
+          <p>Dr. Neil deGrasse Tyson</p>
+          <p>4 / 5 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <h5>1 day ago.</h5>
+      </div>
+      <p>
+        Proto Star captures what science education should feel like — curiosity in motion. <br>
+        I've seen many educational platforms about space, but Proto Star stands out for how it transforms complex cosmic
+        ideas into interactive experiences anyone can enjoy.
+        It doesn't just tell you about the universe; it lets you touch it — through simulations, guided experiments, and
+        dynamic visuals that spark genuine wonder.
+        The platform succeeds where textbooks often fail: it makes learning personal and alive.
       </p>
     </article>
   </section>
 
+  <section class="add-review">
+    <h3>LEAVE A REVIEW</h3>
 
+    <form id="review-form">
+      <input type="text" id="reviewer-name" placeholder="Your name" required>
+      <input type="number" id="review-rating" placeholder="Rating (1-5)" min="1" max="5" required>
+      <textarea id="review-text" placeholder="Write your review..." required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
 
-    <footer>
+  <footer>
     <div>
       <p>© 2025 Proto-Star. All rights reserved.</p>
       <p><a href="#">Privacy</a></p>
@@ -107,8 +202,11 @@
       <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
     </div>
-    
+
   </footer>
+
+
+  <script src="./js/workingshi.js"></script>
 </body>
 
 </html>
