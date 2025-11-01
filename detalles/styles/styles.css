@@ -17,7 +17,7 @@ header {
   align-items: center;
   padding: 20px 60px;
   background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -238,6 +238,15 @@ header nav a:hover {
 .reviews {
   max-width: 900px;
   margin: 60px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.reviews h2 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 
 .review {
@@ -245,18 +254,74 @@ header nav a:hover {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.review-actions {
+.review h4 {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.review p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.review small {
+  color: #777;
+}
+
+.stars {
+  color: #ffc107;
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 3px;
 }
 
-.review-actions button {
-  background: none;
+.score {
+  color: #555;
+  font-size: 0.9em;
+  margin-left: 4px;
+}
+
+.review-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: none;
+  font-family: inherit;
+}
+
+.review-form button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px;
   border: none;
-  color: #7c3aed;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #5b21b6;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
